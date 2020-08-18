@@ -1,0 +1,53 @@
+# Site wide configuration
+
+title: MLG
+description: "Business Affairs, talent auditing, and consulting"
+logo: 120x120.gif
+teaser: 400x250.gif
+locale: en_US
+#url: https://mlgenterprises.net
+
+# Jekyll configuration
+
+sass:
+  sass_dir: _sass
+  style: compressed
+permalink: /:categories/:title/
+kramdown:
+  toc_levels: 1..2
+highlighter: rouge
+gems:
+  - jekyll-sitemap
+  - jekyll-gist
+
+
+# Octopress configuration
+
+# Default extensions
+post_ext: md
+page_ext: md
+
+# Found in _templates/
+post_layout: article
+page_layout: article
+
+# Format titles with titlecase?
+titlecase: true
+
+
+# Site owner
+owner:
+  name: Marcelle Gruman
+  web: http://mlgtalentstrategyandconsulting.com
+  email: marcelle@mlgtalentstrategyandconsulting.com
+  twitter:
+  bio: "25+ years in broadcast production and talent business affairs"
+  avatar: bio-photo.jpg # 160x160 px image for author byline
+  google:
+    plus: +brdcstbabe@google.com
+    ad-client:
+    ad-slot:
+  disqus-shortname:
+
+
+exclude: [".#*","lib", "config.rb", ".sass-cache", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "*.sublime-project", "*.sublime-workspace", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "node_modules", "Gruntfile.js", "package.json"]
