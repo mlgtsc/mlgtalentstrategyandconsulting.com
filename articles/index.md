@@ -1,13 +1,13 @@
 ---
 layout: archive
 title: "Articles"
-date: 2016-05-23T11:39:03-04:00
+date: 2020-08-19T13:39:03-04:00
 modified:
-excerpt: "A collection of thoughts, inspiration, mistakes, and other minutia."
+excerpt: "A collection of thoughts, inspiration, mistakes, and other things."
 tags: []
 image:
   feature:
-  teaser:
+  teaser: CornwallisSky640x480.png
 ---
 
 <div class="tiles">
