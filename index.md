@@ -2,7 +2,7 @@
 layout: home
 permalink: /
 except: This is an excerpt
-centerbanner: Business Affairs and Talent Management Services
+centerbanner: "Under Construction *** Business Affairs and Talent Management Services *** Under Construction"
 image:
   feature: NYCSkylineLICPano-1600x800.jpg
 ---
