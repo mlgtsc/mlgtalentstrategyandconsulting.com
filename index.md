@@ -1,6 +1,7 @@
 ---
 layout: home
 permalink: /
+hitID: HomePage
 except: This is an excerpt
 centerbanner: "Business Affairs and Talent Management Services"
 image:
