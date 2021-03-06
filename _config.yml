@@ -9,6 +9,8 @@ url: "https://mlgtsc.github.io/mlgtalentstrategyandconsulting.com"
 # Use 'bundle exec jekyll serve --host 192.168.1.xxx --baseurl ""' to serve locally
 baseurl: "https://mlgtsc.github.io/mlgtalentstrategyandconsulting.com"
 
+github_url: "https://github.com//cw_website/"
+github_url: "https://github.com/mlgtsc/mlgtalentstrategyandconsulting.com/"
 # Jekyll configuration
 
 sass:
@@ -35,7 +37,6 @@ page_layout: article
 
 # Format titles with titlecase?
 titlecase: true
-
 
 # Site owner
 owner:
