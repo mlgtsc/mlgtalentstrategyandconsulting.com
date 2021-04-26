@@ -11,8 +11,9 @@
 		{% endfor %}
 		</ul>
 	</nav><!-- /.bottom-menu -->
-	<p class="copyright">&#169; {{ site.time | date: '%Y' }} <a href="{{ site.baseurl }}">{{ site.title }}</a> powered by <a href="http://jekyllrb.com">Jekyll</a> + <a href="http://mmistakes.github.io/skinny-bones-jekyll/">Skinny Bones</a>.</p>
+	<p class="copyright">&#169; {{ site.time | date: '%Y' }} <a href="{{ site.baseurl }}">{{ site.title }}</a> powered by <a href="http://jekyllrb.com">Jekyll</a> + <a href="http://mmistakes.github.io/skinny-bones-jekyll/">Skinny Bones</a>. Site last updated at: {{site.time|date: "%B %e, %Y %H:%M %Z"}}</p>
     {% assign pagehitID =  page.hitID | default: page.dir|replace: "/","_" | append: page.name | strip | replace: " ","" | downcase | prepend: "page_"  %}
     <!-- PAGEHITID: {{ pagehitID|url_encode }} -->
     <img src="https://hitcounter.pythonanywhere.com/count/tag.svg?url={{ site.github_url | append: 'hit-counter-' | append: pagehitID | url_encode}}" alt="Stats" style="display: none;"></a>
+
 </footer>
