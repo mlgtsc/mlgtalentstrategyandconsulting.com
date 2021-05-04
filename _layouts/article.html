@@ -5,9 +5,14 @@ layout: default
 <div id="main" role="main">
 	<article class="wrap" itemscope itemtype="http://schema.org/Article">
 		{% if page.image.feature %}
+           {% if page.image.feature contains "https://" %}
+             {% assign purl = page.image.feature %}
+           {% else %}
+             {% assign purl = "/images/"|append: page.image.feature %}
+           {% endif %}
 		<div class="page-feature">
 			<div class="page-image">
-				<img src="{{ site.baseurl }}/images/{{ page.image.feature }}" class="page-feature-image" alt="{{ page.title }}" itemprop="image">
+				<img src="{{ purl }}" class="page-feature-image" style="width:{{page.image.feature_width}}" alt="{{ page.title }}" itemprop="image">
 				{% if page.image.credit %}{% include image-credit.html %}{% endif %}
 			</div><!-- /.page-image -->
 		</div><!-- /.page-feature -->

@@ -21,3 +21,5 @@ Over the years I have been fortunate enough to work on a variety of accounts inc
 
 
 {% include share-this.html %}
+
+[<img src="/images/linkedIn.svg" style="width:10%"> Connect on LinkedIn](https://www.linkedin.com/in/marcellegruman)

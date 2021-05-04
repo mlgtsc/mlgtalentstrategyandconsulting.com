@@ -38,6 +38,30 @@ page_layout: article
 # Format titles with titlecase?
 titlecase: true
 
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      sponsors: "bottom"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      background: "under_construction_PNG46.png"
+      image:
+        feature_width: "100%"
+      flexslider:
+        slideshowSpeed: 7000
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      sponsors: "bottom"
+
 # Site owner
 owner:
   name: Marcelle Gruman

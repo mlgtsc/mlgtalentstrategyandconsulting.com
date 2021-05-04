@@ -29,7 +29,7 @@
 
     <style>
       body {
-          background-color: lightcyan
+          background-color: cyan
       }
       </style>
   </head>
@@ -39,12 +39,22 @@
     {% include navigation-sliding.html %}
 
     {% if page.image.feature %}
-    <div class="page-lead" style="background-image:url({{ site.baseurl }}/images/{{ page.image.feature }})">
+       {% if page.image.feature contains "https://" %}
+         {% assign purl = page.image.feature %}
+       {% else %}
+         {% assign purl = "/images/"|append: page.image.feature %}
+       {% endif %}
+    <div class="page-lead" style="background-image:url({{ purl }})">
         <h2><img src="/images/MLGLogoWhite.png"/></h2>
         <h4 style="text-align:center">{{page.centerbanner}}</h4>
+        <img style="-webkit-user-select: none;float:left;margin: -250px 15px 15px 0px;background-color: hsl(0%, 100%, 100%);width:10%;transition: background-color 300ms;" src="https://static.wixstatic.com/media/fc1d85_adb8204c102546e0a56334e44b1c91a5~mv2.png/v1/crop/x_66,y_0,w_2055,h_2742/fill/w_360,h_479,al_c,q_85,usm_0.66_1.00_0.01/Marcelle2_1.webp">
+<!-- style="float:left; margin-right:10px; width:80px; height:80px; border:none;" -->
         <div class="wrap page-lead-content">
           <h2>&nbsp</h2>
-        <a href="mailto:marcelle@mlgtalentstrategyandconsulting.com" class="btn-inverse">Contact Us</a>
+          <h2>&nbsp</h2>
+          <a href="mailto:marcelle@mlgtalentstrategyandconsulting.com" class="btn-inverse">Contact Us</a>
+          <br>
+          <a href="https://www.linkedin.com/in/marcellegruman"><img src="/images/linkedIn.svg" style="width:4%"></a>
 
 
       </div><!-- /.page-lead-content -->
